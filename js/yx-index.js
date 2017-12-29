@@ -12,3 +12,28 @@ function RemindInfo () {
     }
     setTimeout(RemindInfo,2000);
 }
+
+window.onload = csList();
+
+function csList() {
+    var cs = document.getElementById('yx-top-nav-cs');
+    var list = document.getElementById('yx-top-nav-order-servers');
+    // background
+    var bg = document.getElementById('yx-top-nav-order-server');
+
+    cs.onmouseover = function(){
+        list.style.display = "block";
+
+        //bg.style.transform = scroll;
+    }
+    list.onmouseover = function(){
+        list.style.display = "block";
+    }
+    cs.onmouseout = function(){
+        list.style.display = "none";
+        //bg.style.transform = ;
+    }
+
+
+
+}

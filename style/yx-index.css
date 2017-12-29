@@ -143,6 +143,7 @@ body {
     list-style: none;
     position: relative;
     box-shadow: 2px 2px 5px #ccc;
+    display: none;
 }
 
 .yx-top-nav-order-servers li{
@@ -196,6 +197,17 @@ body {
     font-size: 12px;
     line-height: 36px;
     vertical-align: middle;
+    /*旋转背景图像*/
+
+    /*transform: rotate(180deg);*/
+    /*-ms-transform: rotate(180deg);*/
+    /*/!* IE 9 *!/*/
+    /*-webkit-transform: rotate(180deg);*/
+    /*/!* Safari and Chrome *!/*/
+    /*-o-transform: rotate(180deg);*/
+    /*/!* Opera *!/*/
+    /*-moz-transform: rotate(180deg);*/
+    /*/!* Firefox *!/*/
 }
 
 .yx-top-nav-order-app {
@@ -224,4 +236,3 @@ body {
     vertical-align: middle;
     margin-left: 5px;
 }
-

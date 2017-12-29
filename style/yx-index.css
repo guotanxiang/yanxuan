@@ -1,0 +1,190 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    min-width: 1090px;
+    min-height: 100%;
+}
+.yx-top {
+    width: 100%;
+    height: 240px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.yx-top-nav {
+
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    background-color: #333;
+}
+.yx-top-nav-a {
+    width: 1090px;
+    margin: 0 auto;
+    height: 36px;
+}
+.yx-top-nav-l {
+    float: left;
+}
+.yx-top-nav-con {
+    position: relative;
+    float: left;
+}
+.yx-top-nav-con a{
+    color: #ccc;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 36px;
+    font-size: 12px;
+    -webkit-transform:scale(0.9);
+    vertical-align: middle;
+}
+
+.yx-nav-item {
+    position: relative;
+    float: left;
+    height: 36px;
+    margin-left: 20px;
+}
+
+.yx-nav-top-item-box {
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+    background: url("images/voice.gif") center left no-repeat;
+    vertical-align: middle;
+    position: relative;
+}
+
+.yx-nav-top-item-box ul {
+    margin-left: 20px;
+    position: relative;
+}
+
+.yx-nav-top-item-box li {
+    list-style: none;
+    height: 36px;
+    line-height: 36px;
+}
+
+.yx-nav-top-item-box a {
+    text-decoration: none;
+    color: #ab956d;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.yx-top-nav-r {
+    height: 36px;
+    float: right;
+}
+
+.yx-top-nav-r-reg {
+    height: 36px;
+    float: left;
+}
+.yx-top-nav-r-reg a {
+    color: #ccc;
+    vertical-align: middle;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.yx-top-nav-order {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+
+}
+.yx-top-nav-order-split {
+    display: inline-block;
+    height: 16px;
+    border-left: 1px solid #5c5c5c;
+    vertical-align: middle;
+}
+.yx-top-nav-order a{
+    color: #ccc;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 36px;
+    font-size: 12px;
+    vertical-align: middle;
+    margin-left: 10px;
+
+}
+
+.yx-top-nav-order span{
+    color: #ccc;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 36px;
+    font-size: 12px;
+    vertical-align: middle;
+    margin-left: 10px;
+
+}
+.yx-top-nav-order-server {
+    background-position: 0 -321px;
+    background-position-x: 0px;
+    background-position-y: -321px;
+    height: 5px;
+    width: 11px;
+    background-image: url("images/target.png");
+    display: inline-block;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.yx-top-nav-order-app {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+}
+
+.yx-top-nav-order-app a{
+    color: #ccc;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 36px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.yx-top-nav-order-phone {
+    background-image: url("images/target.png");
+    background-position: 0 0;
+    height: 11px;
+    width: 7px;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 36px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+

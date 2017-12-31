@@ -23,17 +23,24 @@ function csList() {
 
     cs.onmouseover = function(){
         list.style.display = "block";
+        bg.style.transform = "rotate("+180+"deg)";
 
-        //bg.style.transform = scroll;
     }
-    list.onmouseover = function(){
-        list.style.display = "block";
-    }
+
+
     cs.onmouseout = function(){
         list.style.display = "none";
-        //bg.style.transform = ;
+        bg.style.transform = "rotate("+0+"deg)";
     }
-
-
-
 }
+
+//window.onload = showImage();
+//function showImage(){
+//    var img = document.getElementById("yx-ct-banner-team").children;
+//
+//    for(var i = 0; i < img.length; i++){
+//
+//    }
+//    alert(img.length);
+//
+//}

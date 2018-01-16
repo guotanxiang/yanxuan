@@ -5,6 +5,15 @@
     <title>网易严选 - 以严谨的态度，为中国消费者甄选天下优品</title>
     <link rel="stylesheet" type="text/css" href="style/yx-index.css">
     <link rel="icon" href="favicon.icon.ico" >
+    <style rel="stylesheet" type="text/css">
+        .active {
+            width: 8px;
+            height: 8px;
+            border: 2px solid #a5946f;
+            box-shadow: 0 0 0 4px #ddc9a9;
+            background-color:rgba(255,255,255,0.1) !important;
+        }
+    </style>
 </head>
 <body>
     <div class="yx-top">
@@ -90,33 +99,75 @@
             </ul>
         </div>
         <div class="yx-nav-nav-list-class">
-            <div class="yx-nav-nav-list-class-show">
 
+        </div>
+    </div>
+    <div class="yx-ct-banner" id="yx-ct-banner">
+        <!--  div a img  -->
+
+        <div class="yx-xt-banner-img" >
+            <button class="img-pre" id="img-pre"></button>
+            <button class="img-next" id="img-next"></button>
+        </div>
+        <ul class="yx-xt-item" id="yx-xt-item">
+            <li class="active" value="1"></li>
+            <li value="2"></li>
+            <li value="3"></li>
+            <li value="4"></li>
+        </ul>
+    </div>
+    <div class="manufacturingHeader">
+        <div class="manufacturingHeader-title">
+            <h3>品牌制造商</h3>
+            <small>工厂直达消费者，剔除品牌溢价</small>
+        </div>
+        <div class="manufacturingHeader-more">
+            <a href="#">更多制造商 ></a>
+            <span></span>
+        </div>
+    </div>
+    <div class="m-show">
+        <div class="m-show-1">
+            <div class="m-show-title">
+                <a href="#">Adidas制造商</a>
+            </div>
+            <div class="m-show-pirce">
+                <p class="m-show-price-txt">35元起</p>
+            </div>
+
+        </div>
+        <div class="m-show-2">
+            <div class="m-show-title">
+                <a href="#">UGG制造商</a>
+            </div>
+            <div class="m-show-pirce">
+                <p class="m-show-price-txt">129元起</p>
             </div>
         </div>
-
-        <div class="yx-ct-banner">
-            <div class="yx-xt-banner-img" >
-                <ul class="yx-ct-banner-team" id="yx-ct-banner-team">
-                    <li><a href="#" alt=""><img src="images/banner-1.jpg"></a></li>
-                    <li><a href="#" alt=""><img src="images/banner-2.jpg"></a></li>
-                    <li><a href="#" alt=""><img src="images/banner-3.jpg"></a></li>
-                    <li><a href="#" alt=""><img src="images/banner-4.jpg"></a></li>
-                </ul>
-
-            </div>
-            <div class="yx-ct-banner-c">
-                <ol>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ol>
-            </div>
+        <div class="m-show-3">
+            <div class="m-show-top"></div>
+            <div class="m-show-bottom"></div>
+        </div>
+    </div>
+    <div class="manufacturingHeader">
+        <div class="manufacturingHeader-title">
+            <h3>新品首发</h3>
+            <small>周一周四上新，为你寻觅世间好物</small>
+        </div>
+        <div class="manufacturingHeader-more">
+            <a href="#">更多新品 ></a>
+            <span></span>
+        </div>
+    </div>
+    <div class="new-pro">
+        <div class="n-pro-list">
+            <ul class="n-pro-list-box">
+                <li></li>
+            </ul>
         </div>
     </div>
 
-<script src="js/yx-index.js" type="application/javascript"></script>
-<scprit src="js/yx-cslist-index.js" type="application/javascript"></scprit>
+
+    <script src="js/yx-index.js" type="application/javascript"></script>
 </body>
 </html>

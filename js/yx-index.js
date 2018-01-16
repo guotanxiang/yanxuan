@@ -34,13 +34,97 @@ function csList() {
     }
 }
 
-//window.onload = showImage();
-//function showImage(){
-//    var img = document.getElementById("yx-ct-banner-team").children;
-//
-//    for(var i = 0; i < img.length; i++){
-//
-//    }
-//    alert(img.length);
-//
-//}
+window.onload =img();
+var n = 0;
+
+function img() {
+    // alert("a");
+    var pre = document.getElementById("img-pre");
+    var next = document.getElementById("img-next");
+    //获取背景图像
+    var img = document.getElementById("yx-ct-banner");
+
+    // 进度点位
+    var item = document.getElementById("yx-xt-item");
+
+    function nextImage(){
+        n++;
+
+        if(n >= 4){
+            n = 0;
+            img.style.background = "url('images/banner-"+ Math.abs(n) +".jpg') center center no-repeat";
+            item.children[n].className = "active";
+        }else{
+            img.style.background = "url('images/banner-"+ Math.abs(n) +".jpg') center center no-repeat";
+            item.children[n].className = "active";
+        }
+        for(var i=0; i<item.children.length;i++){
+            if(i != n){
+                item.children[i].className = "";
+            }
+        }
+    }
+    next.onclick = nextImage;
+
+
+
+    pre.onclick = function(){
+        n--;
+        img.style.background = "url('images/banner-"+ Math.abs(n) +".jpg') center center no-repeat";
+        if(n <= -1){
+            n = 3;
+            img.style.background = "url('images/banner-"+ Math.abs(n) +".jpg') center center no-repeat";
+            item.children[n].className = "active";
+
+        }else{
+            img.style.background = "url('images/banner-"+ Math.abs(n) +".jpg') center center no-repeat";
+            item.children[n].className = "active";
+        }
+
+        for(var i=0; i<item.children.length;i++){
+            if(i != n){
+                item.children[i].className = "";
+            }
+        }
+    }
+}
+
+
+// window.onload = showImg();
+var n = 0;
+function showImg(){
+
+    //获取背景图像
+    var img = document.getElementById("yx-ct-banner");
+
+    // 进度点位
+    var item = document.getElementById("yx-xt-item");
+
+    n++;
+
+    if(n >= 4){
+        n = 0;
+        img.style.background = "url('images/banner-"+ Math.abs(n) +".jpg') center center no-repeat";
+        item.children[n].className = "active";
+    }else{
+        img.style.background = "url('images/banner-"+ Math.abs(n) +".jpg') center center no-repeat";
+        item.children[n].className = "active";
+    }
+    for(var i=0; i<item.children.length;i++){
+        if(i != n){
+            item.children[i].className = "";
+        }
+    }
+
+    var s = setTimeout(showImg,2090);
+
+    img.onmouseover = function(){
+        clearInterval(s);
+    }
+
+    img.onmouseout = function(){
+        setTimeout(showImg,2090);
+    }
+
+
+}

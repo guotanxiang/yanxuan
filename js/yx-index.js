@@ -34,18 +34,50 @@ function csList() {
     }
 }
 
-window.onload =img();
+// 图片轮循
+
 var n = 0;
 
 function img() {
-    // alert("a");
+
+
+    /*  next是图片前进按钮 */
     var pre = document.getElementById("img-pre");
+    /*  pre是图片后退按钮  */
     var next = document.getElementById("img-next");
     //获取背景图像
     var img = document.getElementById("yx-ct-banner");
 
     // 进度点位
     var item = document.getElementById("yx-xt-item");
+    //定时器
+    var itmer;
+
+    function showImg(){
+
+        //获取背景图像
+        var img = document.getElementById("yx-ct-banner");
+
+        // 进度点位
+        var item = document.getElementById("yx-xt-item");
+
+        n++;
+
+        if(n >= 4){
+            n = 0;
+            img.style.background = "url('images/banner-"+ Math.abs(n) +".jpg') center center no-repeat";
+            item.children[n].className = "active";
+        }else{
+            img.style.background = "url('images/banner-"+ Math.abs(n) +".jpg') center center no-repeat";
+            item.children[n].className = "active";
+        }
+        for(var i=0; i<item.children.length;i++){
+            if(i != n){
+                item.children[i].className = "";
+            }
+        }
+
+    }
 
     function nextImage(){
         n++;
@@ -66,7 +98,16 @@ function img() {
     }
     next.onclick = nextImage;
 
+    function play() {
+        //重复执行的定时器
+        timer = setInterval(function () {
+            next.onclick();
+        }, 4000)
+    }
 
+    function stop() {
+        clearInterval(timer);
+    }
 
     pre.onclick = function(){
         n--;
@@ -87,44 +128,12 @@ function img() {
             }
         }
     }
-}
 
-
-// window.onload = showImg();
-var n = 0;
-function showImg(){
-
-    //获取背景图像
-    var img = document.getElementById("yx-ct-banner");
-
-    // 进度点位
-    var item = document.getElementById("yx-xt-item");
-
-    n++;
-
-    if(n >= 4){
-        n = 0;
-        img.style.background = "url('images/banner-"+ Math.abs(n) +".jpg') center center no-repeat";
-        item.children[n].className = "active";
-    }else{
-        img.style.background = "url('images/banner-"+ Math.abs(n) +".jpg') center center no-repeat";
-        item.children[n].className = "active";
-    }
-    for(var i=0; i<item.children.length;i++){
-        if(i != n){
-            item.children[i].className = "";
-        }
-    }
-
-    var s = setTimeout(showImg,2090);
-
-    img.onmouseover = function(){
-        clearInterval(s);
-    }
-
-    img.onmouseout = function(){
-        setTimeout(showImg,2090);
-    }
+    img.onmouseover = stop;
+    img.onmouseout = play;
+    play();
 
 
 }
+
+window.onload = img();

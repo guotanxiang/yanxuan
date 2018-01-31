@@ -570,7 +570,7 @@ body {
     margin: 0 auto;
     margin-top: 5px;
     background-color: #decaa0;
-    /*overflow: hidden;*/
+    overflow: hidden;
     position: relative;
 }
 .n-pro-list {
@@ -588,7 +588,6 @@ body {
 
 .n-pro-list li{
     display: inline-block;
-    width: ;
 }
 
 

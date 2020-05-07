@@ -5,9 +5,11 @@ var baseDic = -36;
 var i = 0;
 function RemindInfo () {
     var yxNavUl = document.getElementById('yx-nav-top-ul');
+    var yxNavli = yxNavUl.getElementsByTagName("li").length;
+    // alert(yxNavli.length);
     yxNavUl.style.top = i * baseDic+'px';
     i++;
-    if(i == 5){
+    if(i == yxNavli){
         i =0;
     }
     setTimeout(RemindInfo,2000);
@@ -20,7 +22,6 @@ function csList() {
     var list = document.getElementById('yx-top-nav-order-servers');
     // background
     var bg = document.getElementById('yx-top-nav-order-server');
-
     cs.onmouseover = function(){
         list.style.display = "block";
         bg.style.transform = "rotate("+180+"deg)";
@@ -34,8 +35,9 @@ function csList() {
     }
 }
 
-// 图片轮循
 
+
+// 图片轮循
 var n = 0;
 
 function img() {
@@ -132,7 +134,6 @@ function img() {
     img.onmouseover = stop;
     img.onmouseout = play;
     play();
-
 
 }
 

@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f649ae2a-f44a-48f6-8e16-1e9e3b0a798d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/title.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/style/header.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/style/yx-new.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/yx-new.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/favicon.icon.ico" afterPath="$PROJECT_DIR$/favicon.icon.ico" />
-      <change beforePath="$PROJECT_DIR$/images/banner-0.jpg" afterPath="$PROJECT_DIR$/images/banner-0.jpg" />
-      <change beforePath="$PROJECT_DIR$/images/banner-1.jpg" afterPath="$PROJECT_DIR$/images/banner-1.jpg" />
-      <change beforePath="$PROJECT_DIR$/images/banner-2.jpg" afterPath="$PROJECT_DIR$/images/banner-2.jpg" />
-      <change beforePath="$PROJECT_DIR$/images/banner-3.jpg" afterPath="$PROJECT_DIR$/images/banner-3.jpg" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/js/yx-index.js" afterPath="$PROJECT_DIR$/js/yx-index.js" />
-      <change beforePath="$PROJECT_DIR$/style/yx-index.css" afterPath="$PROJECT_DIR$/style/yx-index.css" />
-    </list>
+    <list default="true" id="f649ae2a-f44a-48f6-8e16-1e9e3b0a798d" name="Default" comment="" />
     <ignored path="yanxuan.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -203,8 +188,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,6 +209,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,15 +283,15 @@
       <workItem from="1542252022118" duration="6000" />
       <workItem from="1544002431896" duration="56000" />
       <workItem from="1588841087174" duration="30000" />
+      <workItem from="1588841637748" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102685000" />
+    <option name="totallyTimeSpent" value="102688000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-257" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <frame x="1280" y="-257" width="1920" height="1057" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0895208" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
